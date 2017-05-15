@@ -7,9 +7,9 @@ export class InMemoryDataService implements InMemoryDbService {
                       ,{id:13, name:'Bombasto'}
                       ,{id:14, name:'Celeritas'}
                       ,{id:15, name:'Magenta'}
-                      ,{id:15, name:'Spiderman'}
-                      ,{id:15, name:'Superman'}
-                      ,{id:15, name:'Donar'}
+                      ,{id:16, name:'Spiderman'}
+                      ,{id:17, name:'Superman'}
+                      ,{id:18, name:'Donar'}
                       ];
         return {heroes};
     } 

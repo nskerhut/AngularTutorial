@@ -13,11 +13,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InMemoryDataService } from './services/in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
-
-
-//Imports for loading & configuring the in-memory web api
-//import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-//import { InMemoryDataService }  from './services/in-memory-data.service';
+import { SearchComponentComponent } from './components/search-component/search-component.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     HerolistComponent,
     HerodetailsComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    SearchComponentComponent
     
   ],
   imports: [
