@@ -12,3 +12,4 @@ describe('heros-tutorial App', function() {
     expect(page.getParagraphText()).toEqual('app works!');
   });
 });
+

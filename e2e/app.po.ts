@@ -9,3 +9,4 @@ export class HerosTutorialPage {
     return element(by.css('app-root h1')).getText();
   }
 }
+

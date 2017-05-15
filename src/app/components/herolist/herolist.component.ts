@@ -47,4 +47,22 @@ export class HerolistComponent implements OnInit {
       this.getHeroes();
   }
 
+  add(name: string): void {
+      name = name.trim();
+      if(!name) {return;}
+      
+      this.heroService.create(name)
+      .then(hero => {
+          this.heros.push(hero);
+          this._selectedHero = null;
+      });
+  }
+  delete(hero: Hero): void {
+      this.heroService.delete(hero.id)
+      .then(() => {
+          this.heros = this.heros.filter(h => h !== hero);
+          if(this._selectedHero === hero) { this._selectedHero = null;}
+      });
+     
+  }
 }
