@@ -14,6 +14,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SearchComponentComponent } from './components/search-component/search-component.component';
+import { HeroFormComponent } from './components/hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchComponentComponent } from './components/search-component/search-c
     HerodetailsComponent,
     HeroesComponent,
     DashboardComponent,
-    SearchComponentComponent
+    SearchComponentComponent,
+    HeroFormComponent
     
   ],
   imports: [
